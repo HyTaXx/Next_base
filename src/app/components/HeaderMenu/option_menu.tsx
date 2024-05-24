@@ -2,7 +2,7 @@ import React from "react";
 
 const OptionMenu: React.FC = () => {
     return (
-        <ul className="menu bg-base-200 w-56 rounded-box absolute right-0 mt-2 mx-[8px] origin-top-right transform transition-transform duration-200 ease-in-out">
+        <ul className="menu bg-base-200 w-56 rounded-box absolute right-0 top-12 mt-2 mx-[8px] origin-top-right transform transition-transform duration-200 ease-in-out">
             <li>
                 <a href="account">
                     <svg

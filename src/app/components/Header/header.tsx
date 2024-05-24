@@ -24,9 +24,10 @@ const Header: React.FC = () => {
         <>
             <header className="navbar bg-base-100">
                 <div className="flex-none">
-                    <button
+                    <label
                         className="btn btn-square btn-ghost"
                         onClick={() => setIsNavOpen(!isNavOpen)}
+                        htmlFor="my-drawer"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +42,7 @@ const Header: React.FC = () => {
                                 d="M4 6h16M4 12h16M4 18h16"
                             ></path>
                         </svg>
-                    </button>
+                    </label>
                 </div>
                 <div className="flex-1">
                     <a className="btn btn-ghost text-xl" href="/">

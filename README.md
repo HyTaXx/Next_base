@@ -6,18 +6,18 @@ This project showcases a modern web application stack using Next.js, TailwindCSS
 
 ### Next.js
 
-- **Description**: A React framework enabling features like server-side rendering and static site generation for React applications. It's optimized for performance and SEO.
-- **Link**: [Next.js Official Site](https://nextjs.org/)
+-   **Description**: A React framework enabling features like server-side rendering and static site generation for React applications. It's optimized for performance and SEO.
+-   **Link**: [Next.js Official Site](https://nextjs.org/)
 
 ### TailwindCSS
 
-- **Description**: A utility-first CSS framework for rapid UI development. Offers low-level utility classes for creating custom designs directly within your HTML.
-- **Link**: [TailwindCSS Official Site](https://tailwindcss.com/)
+-   **Description**: A utility-first CSS framework for rapid UI development. Offers low-level utility classes for creating custom designs directly within your HTML.
+-   **Link**: [TailwindCSS Official Site](https://tailwindcss.com/)
 
 ### DaisyUI
 
-- **Description**: A plugin for TailwindCSS that adds component classes, simplifying the creation of beautiful and responsive UIs. Enhances TailwindCSS with pre-designed components.
-- **Link**: [DaisyUI Official Site](https://daisyui.com/)
+-   **Description**: A plugin for TailwindCSS that adds component classes, simplifying the creation of beautiful and responsive UIs. Enhances TailwindCSS with pre-designed components.
+-   **Link**: [DaisyUI Official Site](https://daisyui.com/)
 
 ## Setup Guide
 
@@ -32,6 +32,10 @@ We welcome contributions If you encounter any issues or have suggestions for imp
 
 ## Future Plans
 
-- Expand the project with additional pages and components.
-- Integrate a Node.js backend for enhanced functionality.
-- Continue refining the design and architecture for better scalability and maintainability.
+-   Expand the project with additional pages and components.
+-   Integrate a Node.js backend for enhanced functionality.
+-   Continue refining the design and architecture for better scalability and maintainability.
+
+## Known issues
+
+-   Side drawer opening over Footer

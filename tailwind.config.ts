@@ -7,6 +7,16 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    light: {
+      ...require("daisyui/src/theming/themes")["light"],
+      primary: "blue",
+      secondary: "teal",
+    },
+    dark: {
+      ...require("daisyui/src/theming/themes")["dark"],
+      primary: "red",
+      secondary: "green",
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

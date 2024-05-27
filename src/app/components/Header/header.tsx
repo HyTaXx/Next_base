@@ -2,6 +2,7 @@ import React from "react";
 import NavMenu from "../HeaderMenu/nav_menu";
 import OptionMenu from "../HeaderMenu/option_menu";
 import { useState, useEffect } from "react";
+import SearchBar from "../SearchBar/searchbar";
 
 const Header: React.FC = () => {
     const [theme, setTheme] = useState("light");
@@ -51,7 +52,8 @@ const Header: React.FC = () => {
                     <a className="link link-hover text-sm">Components</a>
                     <a className="link link-hover text-sm">Github</a>
                 </div>
-                <div className="flex-none">
+                <div className="flex-none gap-5">
+                    <SearchBar />
                     {/* Theme controller */}
                     <label className="flex cursor-pointer gap-2">
                         <svg

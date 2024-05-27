@@ -7,9 +7,7 @@ export default function Home() {
     return (
         <main className="relative w-full min-h-[100vh] flex flex-col justify-between">
             <Header />
-            <div>
-                <Hero></Hero>
-            </div>
+            <div className="z-0">{/* <Hero></Hero> */}</div>
             <Footer />
         </main>
     );

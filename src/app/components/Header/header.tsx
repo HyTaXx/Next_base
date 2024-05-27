@@ -22,7 +22,7 @@ const Header: React.FC = () => {
     };
     return (
         <>
-            <header className="navbar bg-base-100">
+            <header className="navbar bg-base-100 fixed z-30">
                 <div className="flex-none">
                     <label
                         className="btn btn-square btn-ghost"
@@ -44,10 +44,13 @@ const Header: React.FC = () => {
                         </svg>
                     </label>
                 </div>
-                <div className="flex-1">
+                <div className="flex-1 gap-5">
                     <a className="btn btn-ghost text-xl" href="/">
-                        Next_base
+                        NextbaseUI
                     </a>
+                    <a className="link link-hover text-sm">Docs</a>
+                    <a className="link link-hover text-sm">Components</a>
+                    <a className="link link-hover text-sm">Github</a>
                 </div>
                 <div className="flex-none">
                     {/* Theme controller */}

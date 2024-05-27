@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 
 const Header: React.FC = () => {
     const [theme, setTheme] = useState("light");
-    const [isNavOpen, setIsNavOpen] = useState(false);
     const [isOptionOpen, setIsOptionOpen] = useState(false);
 
     useEffect(() => {
@@ -20,13 +19,13 @@ const Header: React.FC = () => {
         localStorage.setItem("theme", newTheme);
         document.documentElement.setAttribute("data-theme", newTheme);
     };
+
     return (
         <>
             <header className="navbar bg-base-100 fixed z-30">
                 <div className="flex-none">
                     <label
                         className="btn btn-square btn-ghost"
-                        onClick={() => setIsNavOpen(!isNavOpen)}
                         htmlFor="my-drawer"
                     >
                         <svg
@@ -109,7 +108,8 @@ const Header: React.FC = () => {
                     </button>
                 </div>
             </header>
-            {isNavOpen && <NavMenu />}
+
+            <NavMenu />
             {isOptionOpen && <OptionMenu />}
         </>
     );

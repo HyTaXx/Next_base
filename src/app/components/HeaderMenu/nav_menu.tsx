@@ -11,6 +11,9 @@ const NavMenu: React.FC = () => {
                     className="drawer-overlay"
                 ></label>
                 <div className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+                    <label aria-label="close sidebar" htmlFor="my-drawer">
+                        close
+                    </label>
                     <ul className="bg-base-200 rounded-box">
                         <li>
                             <a>FAQ</a>

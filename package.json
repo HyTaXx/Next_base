@@ -12,11 +12,15 @@
     "autoprefixer": "^10.4.19",
     "daisyui": "^4.11.1",
     "next": "14.2.3",
+    "prism-themes": "^1.9.0",
+    "prismjs": "^1.29.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-simple-typewriter": "^5.0.1"
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/prismjs": "^1.26.4",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "postcss": "^8.4.38",

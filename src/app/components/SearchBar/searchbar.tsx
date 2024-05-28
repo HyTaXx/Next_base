@@ -39,6 +39,7 @@ const SearchBar: React.FC = () => {
         { label: "Docs", url: "/docs", category: "Links" },
         { label: "About", url: "/about", category: "Links" },
         { label: "Contact", url: "/contact", category: "Links" },
+        { label: "Test", url: "/test", category: "Links" },
         {
             label: "Button",
             url: "/docs/components/button",
@@ -74,7 +75,12 @@ const SearchBar: React.FC = () => {
                 className="border border-gray-300 rounded-md py-2 px-4 focus:outline-none w-64"
             />
             {isFocused && (
-                <div className="absolute top-full left-0 w-full shadow-lg border border-gray-200 rounded-md mt-1 p-2">
+                <div
+                    className={`absolute top-full left-0 w-full shadow-lg border border-gray-200 rounded-md mt-1 p-2 max-h-[300px] overflow-y-auto ${
+                        getThemeColor() === "light" ? "bg-white" : "bg-base-200"
+                    }`}
+                    id="search-options"
+                >
                     {Object.entries(groupedOptions).map(
                         ([category, options]) => (
                             <div key={category}>

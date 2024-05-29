@@ -2,10 +2,10 @@ import React from "react";
 import NavMenu from "../HeaderMenu/nav_menu";
 import OptionMenu from "../HeaderMenu/option_menu";
 import { useState, useEffect } from "react";
+import SearchBar from "../SearchBar/searchbar";
 
 const Header: React.FC = () => {
     const [theme, setTheme] = useState("light");
-    const [isNavOpen, setIsNavOpen] = useState(false);
     const [isOptionOpen, setIsOptionOpen] = useState(false);
 
     useEffect(() => {
@@ -20,13 +20,13 @@ const Header: React.FC = () => {
         localStorage.setItem("theme", newTheme);
         document.documentElement.setAttribute("data-theme", newTheme);
     };
+
     return (
         <>
-            <header className="navbar bg-base-100">
+            <header className="navbar bg-base-100 fixed z-30">
                 <div className="flex-none">
                     <label
                         className="btn btn-square btn-ghost"
-                        onClick={() => setIsNavOpen(!isNavOpen)}
                         htmlFor="my-drawer"
                     >
                         <svg
@@ -44,12 +44,16 @@ const Header: React.FC = () => {
                         </svg>
                     </label>
                 </div>
-                <div className="flex-1">
+                <div className="flex-1 gap-5">
                     <a className="btn btn-ghost text-xl" href="/">
-                        Next_base
+                        NextbaseUI
                     </a>
+                    <a className="link link-hover text-sm">Docs</a>
+                    <a className="link link-hover text-sm">Components</a>
+                    <a className="link link-hover text-sm">Github</a>
                 </div>
-                <div className="flex-none">
+                <div className="flex-none gap-5">
+                    <SearchBar />
                     {/* Theme controller */}
                     <label className="flex cursor-pointer gap-2">
                         <svg
@@ -106,7 +110,8 @@ const Header: React.FC = () => {
                     </button>
                 </div>
             </header>
-            {isNavOpen && <NavMenu />}
+
+            <NavMenu />
             {isOptionOpen && <OptionMenu />}
         </>
     );

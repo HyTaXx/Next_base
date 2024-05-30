@@ -48,9 +48,21 @@ const Header: React.FC = () => {
                     <a className="btn btn-ghost text-xl" href="/">
                         NextbaseUI
                     </a>
-                    <a className="link link-hover text-sm">Docs</a>
-                    <a className="link link-hover text-sm">Components</a>
-                    <a className="link link-hover text-sm">Github</a>
+                    <a className="link link-hover text-sm" href="/docs">
+                        Docs
+                    </a>
+                    <a
+                        className="link link-hover text-sm"
+                        href="/docs/components"
+                    >
+                        Components
+                    </a>
+                    <a
+                        className="link link-hover text-sm"
+                        href="https://www.github.com/HyTaXx"
+                    >
+                        Github
+                    </a>
                 </div>
                 <div className="flex-none gap-5">
                     <SearchBar />

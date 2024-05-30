@@ -44,10 +44,10 @@ const PreviewMockup: React.FC = () => {
                     onChange={handleCheckboxChange} // Add onChange handler
                 />
                 <ul className="steps">
-                    <li className="step step-primary">Register</li>
-                    <li className="step step-primary">Choose plan</li>
-                    <li className="step">Purchase</li>
-                    <li className="step">Receive Product</li>
+                    <li className="step step-primary">Purchase</li>
+                    <li className="step step-primary">Read Doc</li>
+                    <li className="step mx-3">Build Project</li>
+                    <li className="step">Finish Project</li>
                 </ul>
             </div>
         </div>

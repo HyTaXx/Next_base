@@ -38,6 +38,29 @@ export default function Home() {
                         <PreviewMockup />
                     </div>
                 </section>
+                <section className="flex flex-col">
+                    <div className="collapse w-[500px]">
+                        <input type="checkbox" />
+                        <div className="collapse-title text-xl font-medium">
+                            Why Next BaseUI ?
+                        </div>
+                        <div className="collapse-content">
+                            <p>Next BaseUI is giving you easy to use code</p>
+                        </div>
+                    </div>
+                    <div className="collapse  w-[500px]">
+                        <input type="checkbox" />
+                        <div className="collapse-title text-xl font-medium">
+                            Which framework can i use ?
+                        </div>
+                        <div className="collapse-content">
+                            <p>
+                                plain HTML, React, NextJS, ... as long as you
+                                use tailwindcss
+                            </p>
+                        </div>
+                    </div>
+                </section>
             </div>
             <Footer />
         </main>
